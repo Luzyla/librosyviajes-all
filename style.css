@@ -28,12 +28,16 @@ header {
 
 #logo {
     width: 200px;
-    height: 50px;
+    height: 55px;
     float: left;
     margin: 5px;
-    background-image: url(./images/logo.png);
-    background-size: 100%;
-    background-position: left;
+    background-image: url(./images/logo2.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+#logo img {
+    object-fit: fill;
 }
 
 /* Botonera */
@@ -133,7 +137,7 @@ li {
     float: left;
     align-self: center;
     background-color: #fac017;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -160,6 +164,12 @@ li {
     position: absolute;
     top: 0%;
     left: 0%;
+}
+
+.text {
+    font-size: smaller;
+    text-shadow: 2px 2px 5px #fafafa;
+    padding: 2px 4px;
 }
 
 .container:hover .book-image {
@@ -210,16 +220,23 @@ li {
     margin: 10px 5px 10px 5px;
 }
 
+.map-lugar {
+    display: none;
+}
+
 /* Sección 4 */
 #redes {
-    width: auto;
-    height: 100px;
+    height: 95px;
     background-color: #fafafa;
     opacity: 0.967;
+    padding: 10px;
 }
 
 .img-redes {
-    margin-left: 38%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
  
 .img-redes img {
@@ -259,9 +276,11 @@ li {
 
 /* Sección 0 ~ Welcome*/
 h1 {
-    margin-left: 20px;
-    margin-top: 15px;
+    margin: 0px;
+    padding: 10px;
     text-align: center;
+    text-shadow: 2px 2px 5px #fafafa;
+    text-shadow: 3px 3px 6px #fac017;
 }
 
 h2 {
@@ -270,11 +289,14 @@ h2 {
     font-size: 45px;
     text-align: center;
     margin: 0px;
+    padding: 10px;
+    /*text-shadow: 2px 2px 5px #fafafa;*/
+    text-shadow: 3px 3px 6px #fac017;
 }
 
 p {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px;
+    padding: 10px;
     font-size: 21px;
     font-weight: normal;
     text-align: justify;
@@ -282,8 +304,262 @@ p {
 
 p span {
     font-weight: bold;
-    color: #fac107; 
+    color: #ebb400; 
+    text-shadow: 3px 3px 7px #fac017;
 }
 
+/* -------------------------------
+        MEDIA 600 - 1023
+--------------------------------*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+    body, header, footer {
+        width: 590px;
+    }
+    
+    body {
+        background-size: 700px;
+    }
+    
+    /* HEADER */
+    header {
+        height: auto;
+    }
+
+    #logo {
+        width: 150px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    
+    /* Botonera */
+    #botonera {
+        width: 410px;
+        margin: 3px 3px 3px 3px;
+        box-sizing: border-box;
+    }
+ 
+    .button1 {
+        width: 95px;
+        height: 45px;
+    }
+   
+    /* Cambios de estilo predeterminados */
+    .espacio {
+        height: 60px;
+    }
+    
+    /* Sección 1 ~ Hola*/
+    #hola {
+        width: 100%;
+        height: 405px;
+    }
+    
+    #texto {
+        background-image: url(./images/bookLoverTransp.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        text-shadow: 2px 2px 5px #fafafa;
+        text-shadow: 3px 3px 6px #fac017;
+        width: 580px;
+    }
+    
+    #imgfoto {
+        display: none
+    }
+
+    
+    /* Sección 2 ~ BOOKS */
+    .books {
+        height: 1500px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+       
+    /* Sección 3 */
+    #viajes-carrusel {
+        height: 880px;
+    }
+    
+    .viajes {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .lugares {
+        padding-bottom: 50px;
+    }
+    
+    
+    /* Sección 5 */
+    #footer {
+        height: auto;
+    }
+
+    #footer div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    p span {
+        color: #dca800;
+    }
+
+} /* fin MEDIA 600-1023 */
+
+/* -------------------------------
+           MEDIA 599
+--------------------------------*/
+
+@media all and (max-width: 599px) {
+
+    body, header, footer {
+        width: 90%;
+    }
+    
+    body {
+        background-size: 590px;
+    }
+    
+    /* HEADER */
+    header {
+        height: auto;
+    }
+    
+    #logo {
+        width: 100px;
+        margin: 0px;
+        background-size: 95%;
+    }
+
+    #logo img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: center;
+    }
+       
+    /* Botonera */
+    #botonera {
+        width: 260px;
+        margin: 0px;
+        padding-top: 6px;
+        box-sizing: border-box;
+    }
+    
+    .button1 {
+        width: 60px;
+        height: 35px;
+        padding-top: 6px;
+        margin: 0px;
+        font-size: 14px;
+        object-position: right;
+    }
+
+    .espacio {
+    height: 40px;
+    }
+
+    /* Sección 1 ~ Hola */
+    #hola {
+        width: 100%;
+        height: 330px;
+    }
+    
+    #texto {
+        background-image: url(./images/bookLoverTransp.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        text-shadow: 2px 2px 5px #fafafa;
+        text-shadow: 3px 3px 6px #fac017;
+        width: auto;
+        height: auto;
+    }
+    
+    #imgfoto {
+        display: none
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #texto span {
+        color: #dca800;
+        text-shadow: 3px 3px 7px #fafafa;
+    } 
+
+    
+    /* Sección 2 ~ BOOKS */
+    .books {
+        height: 1110px;
+        align-content: center;
+    }
+    
+    .container {
+        width: 158.4px;
+        height: 231.55px;
+    }
+    
+      
+    /* Sección 3 */
+    #viajes-carrusel {
+        height: 670px;
+    }
+
+    .lugares {
+        width: 162px;
+        height: 281.55px;
+        margin-left: 10px;
+    }
+    
+    .img-lugar {
+        width: 162px;
+        height: 231.55px;
+        align-content: center;
+    }
+    
+    .img-lugar img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .txt-lugar {
+        width: 162px;
+        height: auto;
+        margin: 0px;
+        padding: 10px 0px 5px 0px;
+        box-sizing: border-box;
+    }
+    
+
+    /* Sección 4 - empty */
+   
+    
+    /* Sección 5 */
+    #footer {
+        height: auto;
+    }
+
+    #footer div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    
+} /* fin MEDIA hasta 599 */
 
 /* Lucila Di Lorenzo */
