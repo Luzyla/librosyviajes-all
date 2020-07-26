@@ -16,7 +16,9 @@ body {
     color: #424242;
 }
 
-/* HEADER */
+/* -----------------------
+        HEADER
+-------------------------- */
 header {
     height: 60px;
     background-color: #fafafa;
@@ -38,9 +40,15 @@ header {
 
 #logo img {
     object-fit: fill;
+    height: 100%;
+    width: 100%;
+    object-position: left;
 }
 
-/* Botonera */
+
+/* -----------------------
+        Botonera
+----------------------- */
 #botonera {
     width: 500;
     height: 50px;
@@ -73,7 +81,9 @@ header {
     box-shadow: 5px 10px 7px rgba(0,0,0,0.3);
 }
 
-/* Cambios de estilo predeterminados */
+/* -----------------------
+Cambios de estilo predeterminados 
+----------------------- */
 a {
     text-decoration: none;
     font-style: none;
@@ -91,13 +101,18 @@ li {
     display: inline-block;
 }
 
+/* -----------------------
+        JOCKER
+----------------------- */
 .espacio {
     background-color: #fafafa;
     opacity: 0;
     height: 60px;
 }
 
-/* Sección 1 ~ Hola*/
+/* -----------------------
+    Sección 1 ~ Hola
+----------------------- */
 #hola {
     height: 420px;
     background-color: #fafafa;
@@ -123,7 +138,9 @@ li {
 }
 
 
-/* Sección 2 ~ BOOKS */
+/* -----------------------
+    Sección 2 ~ BOOKS 
+----------------------- */
 .books {
     height: 800px;
     background-color: #fafafa;
@@ -180,7 +197,9 @@ li {
     opacity: 1;
 }
 
-/* Sección 3 */
+/* -----------------------
+        Sección 3 
+----------------------- */
 #viajes-carrusel {
     height: 480px;
     background-color: #fafafa;
@@ -224,7 +243,9 @@ li {
     display: none;
 }
 
-/* Sección 4 */
+/* ----------------------- 
+        Sección 4 
+----------------------- */
 #redes {
     height: 95px;
     background-color: #fafafa;
@@ -246,7 +267,9 @@ li {
 }                                   
 
 
-/* Sección 5 */
+/* -----------------------
+        Sección 5 
+----------------------- */
 #footer {
     height: 80px;
     background-color: #424242;
@@ -274,7 +297,9 @@ li {
     color: #fac017;
 } 
 
-/* Sección 0 ~ Welcome*/
+/* -----------------------
+    Sección 0 ~ Welcome
+----------------------- */
 h1 {
     margin: 0px;
     padding: 10px;
@@ -308,6 +333,39 @@ p span {
     text-shadow: 3px 3px 7px #fac017;
 }
 
+/* -----------------------
+    SECCIÓN JAVASCRIPT
+----------------------- */
+
+.javascript {
+    width: 100%;
+    height: 400px;
+    background-color: #fafafa;
+    opacity: 0.967;
+}
+
+.form-preguntas {
+    align-content: center;
+    margin-left: 200px;
+}
+
+.form-preguntas p {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h3 {
+    color: #fac017;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 3px 3px 6px #fac017;
+}
+
+
 /* -------------------------------
         MEDIA 600 - 1023
 --------------------------------*/
@@ -328,23 +386,30 @@ p span {
     }
 
     #logo {
-        width: 150px;
-        margin: 5px;
+        width: 110px;
+        margin: 0px;
         box-sizing: border-box;
+        background-size: 90%;
     }
     
+    #logo img {
+        object-fit: cover;
+    }
+
     /* Botonera */
     #botonera {
-        width: 410px;
-        margin: 3px 3px 3px 3px;
+        width: 480px;
+        margin: 0px;
+        padding-top: 3px;
         box-sizing: border-box;
     }
  
     .button1 {
-        width: 95px;
+        width: 87px;
         height: 45px;
+        object-position: right;
     }
-   
+    
     /* Cambios de estilo predeterminados */
     .espacio {
         height: 60px;
@@ -412,6 +477,11 @@ p span {
         color: #dca800;
     }
 
+    /* Seccion 6 ~ Feedback */
+    .form-preguntas {
+        margin-left: 100px;
+    }
+
 } /* fin MEDIA 600-1023 */
 
 /* -------------------------------
@@ -421,7 +491,7 @@ p span {
 @media all and (max-width: 599px) {
 
     body, header, footer {
-        width: 90%;
+        width: 93%;
     }
     
     body {
@@ -434,32 +504,30 @@ p span {
     }
     
     #logo {
-        width: 100px;
+        width: 20%;
         margin: 0px;
-        background-size: 95%;
+        background-size: 85%;
     }
 
     #logo img {
         object-fit: cover;
-        height: 100%;
-        width: 100%;
-        object-position: center;
     }
-       
+
+          
     /* Botonera */
     #botonera {
-        width: 260px;
+        width: 80%;
         margin: 0px;
-        padding-top: 6px;
+        padding-top: 3px;
         box-sizing: border-box;
     }
     
     .button1 {
-        width: 60px;
-        height: 35px;
+        width: 50px;
+        height: 33px;
         padding-top: 6px;
         margin: 0px;
-        font-size: 14px;
+        font-size: 11.5px;
         object-position: right;
     }
 
@@ -483,6 +551,8 @@ p span {
         text-shadow: 3px 3px 6px #fac017;
         width: auto;
         height: auto;
+        margin-left: 0px;
+        margin-bottom: 0px;
     }
     
     #imgfoto {
@@ -506,26 +576,31 @@ p span {
     }
     
     .container {
-        width: 158.4px;
-        height: 231.55px;
+        width: 147.3px;
+        height: 216.3px;
+    }
+
+    .text {
+        padding: 1px 1px;
     }
     
       
     /* Sección 3 */
     #viajes-carrusel {
         height: 670px;
+        align-content: center;
     }
 
     .lugares {
-        width: 162px;
-        height: 281.55px;
-        margin-left: 10px;
+        width: 147.3px;
+        height: 266px;
+        margin-left: 5px;
+        align-content: center;
     }
     
     .img-lugar {
-        width: 162px;
-        height: 231.55px;
-        align-content: center;
+        width: 147.3px;
+        height: 216.3px;
     }
     
     .img-lugar img{
@@ -560,6 +635,20 @@ p span {
     }
 
     
+    /* -----------------------
+        SECCIÓN JAVASCRIPT
+    ----------------------- */
+    .javascript {
+        width: 100%;
+        height: 360px;
+    }
+
+    .form-preguntas {
+        margin-left: 40px;
+    }
+
+    
+
 } /* fin MEDIA hasta 599 */
 
 /* Lucila Di Lorenzo */

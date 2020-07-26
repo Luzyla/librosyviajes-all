@@ -1,12 +1,21 @@
 <!DOCTYpE html>
 <html>
   <head>
-    <title>Evaluación Unidad 6 ~ Lucila Di Lorenzo</title>
+    <title>Evaluación Unidad 7 ~ Lucila Di Lorenzo</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link type="image/x-icon" href="./images/001-snowflake.ico" rel="icon"/>
     <link rel="shortcut icon" href="./images/001-snowflake.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- JAVASCRIPT DENTRO DE HTML-->
+      <script type="text/javascript">
+        var nombre = prompt('¿Cuál es tu nombre?')
+        var libro = prompt('¿Cuál es tu libro favorito?')
+        var viaje = prompt('¿A dónde te gustaría viajar?')
+        var edad = prompt('¿Me dirías tu edad? Si preferís no decirla, poné un guión "-"')
+        var contacto = prompt('Si queres que estemos en contacto, escribime tu email: ')
+      </script>
   </head>
 
   <body>
@@ -20,6 +29,7 @@
           <li><a href="#hola" class="button1">Hola</a></li>
           <li><a href="#book" class="button1">Books</a></li>
           <li><a href="#viajes-carrusel" class="button1">Viajes</a></li>
+          <li><a href="#feedback" class="button1">Feedback</a></li>
           <li><a href="#redes" class="button1">Redes</a></li>
         </ul>
       </nav>
@@ -164,6 +174,58 @@
       </section>
 
     </section>
+
+    <section id="feedback">
+          
+      <section class="javascript">
+        <div class="formulario-js">
+          <h2>Tu Feedback</h2>
+          
+          <div class="form-preguntas">
+            <p>Tu nombre: 
+              <span>
+                <script>
+                document.write(nombre)
+                </script>
+              </span>
+            </p>
+
+            <p>¿Cuál es tu libro favorito?: 
+              <span>
+                <script type="text/javascript">
+                document.write(libro)
+                </script>
+              </span>
+            </p>
+            
+            <p>Lugares a los que te gustaría viajar: 
+              <span>
+                <script type="text/javascript">
+                  document.write(viaje)
+                </script>
+              </span>
+            </p>
+            <p>Tu edad es: 
+              <span>  
+                <script type="text/javascript">
+                  document.write(edad)
+                </script>
+              </span>
+            </p>
+            <p>Tu info de contacto: 
+              <span>
+                <script type="text/javascript">
+                  document.write(contacto)
+                </script>
+              </span>
+            </p>
+          </div>
+          
+          <h3>¡Gracias por Responder!</h3>
+        
+        </div>
+      </section>
+
 
     <section id="redes">
       <div class="img-redes">
