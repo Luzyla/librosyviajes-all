@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+body, header, footer {
+    width: 960px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-color: #009c8c;
+    background-size: 1024px;
+    font-family: Montserrat;
+}
+
+header {
+    height: 60px;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 200px;
+    height: 50px;
+    float: left;
+    background-color: #ff6373;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#botonera {
+    width: 450px;
+    height: 50px;
+    float: right;
+    background-color: #ff6373;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Sección 1 */
+#hola {
+    height: 400px;
+    background-color: #fafafa;
+}
+
+#texto {
+    width: 555px;
+    height: 390px;
+    float: left;
+    background-color: #00c3af;
+    margin: 0px 0px 5px 5px;
+}
+
+#imgfoto {
+    width: 390px;
+    height: 390px;
+    float: right;
+    background-color: #00c3af;
+    margin: 0px 5px 0px 5px;
+}
+
+/* Sección 2 */
+#skills {
+    height: 400px;
+    background-color: #ffffff;
+}
+
+#skills div {
+    width: 300px;
+    height: 180px;
+    float: left;
+    align-self: center;
+    background-color: #ff6373;
+    margin: 10px 10px 10px 10px;
+}
+
+/* Sección 3 */
+#portfolio-carrusel {
+    height: 400px;
+    background-color: #fafafa;
+}
+
+#portfolio-carrusel div {
+    width: 310px;
+    height: 165px;
+    float: left;
+    align-self: center;
+    background-color: #00c3af;
+    margin: 10px 5px 10px 5px;
+}
+
+/* Sección 4 */
+#redes {
+    height: 100px;
+    background-color: #ffffff;
+}
+
+#redes div {
+    width: 390px;
+    height: 90px;
+    align-self: center;
+    background-color: #ff6373;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* Sección 5 */
+#footer {
+    height: 80px;
+    background-color: #fafafa;
+}
+
+#footer div {
+    width: 960px;
+    height: 80px;
+    align-self: center;
+    background-color: #4e4e4e;
+    margin: 0 0 0 0;
+}
+
+/* Lucila Di Lorenzo */
