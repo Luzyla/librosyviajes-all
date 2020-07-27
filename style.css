@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 body, header, footer {
     width: 960px;
@@ -12,7 +13,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 1024px;
-    font-family: Dancing Script;
+    font-family: 'Dancing Script';
     color: #424242;
 }
 
@@ -33,17 +34,20 @@ header {
     height: 55px;
     float: left;
     margin: 5px;
-    background-image: url(./images/logo2.png);
+    /*background-image: url(./images/logo2.png);
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 65%;*/
+    font-family: 'Allura';
+    font-size: 60px;
+    color: #424242;
 }
 
-#logo img {
+/*#logo img {
     object-fit: fill;
     height: 100%;
     width: 100%;
     object-position: left;
-}
+}*/
 
 
 /* -----------------------
@@ -201,7 +205,7 @@ li {
         Sección 3 
 ----------------------- */
 #viajes-carrusel {
-    height: 480px;
+    height: 500px;
     background-color: #fafafa;
     opacity: 0.967;
 }
@@ -247,7 +251,7 @@ li {
         Sección 4 
 ----------------------- */
 #redes {
-    height: 95px;
+    height: 195px;
     background-color: #fafafa;
     opacity: 0.967;
     padding: 10px;
@@ -346,7 +350,7 @@ p span {
 
 .form-preguntas {
     align-content: center;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .form-preguntas p {
@@ -389,12 +393,13 @@ h3 {
         width: 110px;
         margin: 0px;
         box-sizing: border-box;
-        background-size: 90%;
+        /*background-size: 90%;*/
+        font-size: 35px;
     }
     
-    #logo img {
+    /*#logo img {
         object-fit: cover;
-    }
+    }*/
 
     /* Botonera */
     #botonera {
@@ -479,7 +484,7 @@ h3 {
 
     /* Seccion 6 ~ Feedback */
     .form-preguntas {
-        margin-left: 100px;
+        margin-left: 10px;
     }
 
 } /* fin MEDIA 600-1023 */
@@ -506,12 +511,13 @@ h3 {
     #logo {
         width: 20%;
         margin: 0px;
-        background-size: 85%;
+        /*background-size: 85%;*/
+        font-size: 25px;
     }
 
-    #logo img {
+    /*#logo img {
         object-fit: cover;
-    }
+    }*/
 
           
     /* Botonera */
@@ -605,7 +611,7 @@ h3 {
     
     .img-lugar img{
         object-fit: cover;
-        height: 100%;
+        /*height: 100%;*/
         width: 100%;
     }
 
@@ -644,7 +650,7 @@ h3 {
     }
 
     .form-preguntas {
-        margin-left: 40px;
+        margin-left: 5px;
     }
 
     
